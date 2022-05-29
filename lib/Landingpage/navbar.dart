@@ -63,35 +63,35 @@ class DesktopNavbar extends StatelessWidget {
               //   width: 30,
               // ),
               //nw we will make button
-              // CircleAvatar(
-              //   backgroundImage: NetworkImage(''),
-              //   backgroundColor: Colors.white38,
-              //   radius: 25,
-              // ),
-              // Padding(
-              //   padding: const EdgeInsets.all(20.0),
-              //   child: MaterialButton(
-              //     color: Colors.orange,
-              //     shape: RoundedRectangleBorder(
-              //         borderRadius: BorderRadius.all(Radius.circular(15))),
-              //     onPressed: () {
-              //       // Navigator.push(
-              //       //     context,
-              //       //     MaterialPageRoute(
-              //       //         builder: (context) => Favorite(
-              //       //               sem: sem,
-              //       //               skill: 'skill',
-              //       //             )));
-              //     }, //we'll leave it empty
-              //     child: Padding(
-              //       padding: const EdgeInsets.all(8.0),
-              //       child: Text(
-              //         'Your Favorite',
-              //         style: TextStyle(color: Colors.white, fontSize: 25),
-              //       ),
-              //     ),
-              //   ),
-              // ),
+              CircleAvatar(
+                backgroundImage: NetworkImage(''),
+                backgroundColor: Colors.white38,
+                radius: 25,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: MaterialButton(
+                  color: Colors.orange,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(15))),
+                  onPressed: () {
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => Favorite(
+                    //               sem: sem,
+                    //              skill: 'skill',
+                    // )));
+                  }, //we'll leave it empty
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Your Favorite',
+                      style: TextStyle(color: Colors.white, fontSize: 25),
+                    ),
+                  ),
+                ),
+              ),
               // Padding(
               //   padding: const EdgeInsets.all(20.0),
               //   child: MaterialButton(
