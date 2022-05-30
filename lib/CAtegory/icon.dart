@@ -11,16 +11,17 @@ class CatigoryW extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 210,
-      width: 570,
+      width: MediaQuery.of(context).size.width / 2.5,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: Color(0x9F3D416E),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(
             image,
-            width: 539,
+            width: MediaQuery.of(context).size.width / 2.7,
             height: 179,
           ),
           Text(

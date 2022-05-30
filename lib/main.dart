@@ -1,6 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:webfresher/service/ServiceSection.dart';
 
 import 'About/aboutsection.dart';
@@ -34,30 +33,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Builder(builder: (context) {
-      final String? initialRoute;
       return MaterialApp(
-        builder: (context, child) => ResponsiveWrapper.builder(child,
-            maxWidth: 1500,
-            minWidth: 480,
-            defaultScale: true,
-            breakpoints: [
-              ResponsiveBreakpoint.resize(380, name: MOBILE),
-              ResponsiveBreakpoint.autoScale(800, name: TABLET),
-              ResponsiveBreakpoint.resize(1000, name: DESKTOP),
-            ],
-            background: Container(color: Color(0xFFF5F5F5))),
-        initialRoute: "/",
-        routes: {
-          // When navigating to the "/" route, build the FirstScreen widget.
-          '/': (context) => MyHomePage(),
-          // debugShowCheckedModeBanner: false,
-          // title: 'Freher Space',
-          // theme: ThemeData(
-          //   primarySwatch: Colors.blue,
-          //   visualDensity: VisualDensity.adaptivePlatformDensity,
-          // ),
-          // home: MyHomePage(),
-        },
+        debugShowCheckedModeBanner: false,
+        title: 'Freher Space',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: MyHomePage(),
       );
     });
   }

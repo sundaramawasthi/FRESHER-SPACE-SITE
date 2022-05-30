@@ -48,33 +48,6 @@ class InstructionPage extends StatelessWidget {
             ),
           ],
         ),
-        // Positioned(
-        // top: 80,
-        // left: MediaQuery.of(context).size.width / 4,
-        // child: FadeIn(
-        // duration: Duration(),
-        // child: SizedBox(
-        // height: 80, width: 80, child: RectangleDotPatternLarge()),
-        // ),
-        // ),
-        // Positioned(
-        // bottom: 80,
-        // left: MediaQuery.of(context).size.width / 8,
-        // child: FadeIn(
-        // delay: 1.5,
-        // child: SizedBox(
-        // height: 90, width: 90, child: RectangleDotPatternLarge()),
-        // ),
-        // ),
-        // Positioned(
-        // top: MediaQuery.of(context).size.height / 2,
-        // right: -15,
-        // child: RotatedPattern(
-        // pattern: SizedBox(
-        // child: DotWithTriangle(),
-        // ),
-        // ),
-        // ),
       ],
     );
   }

@@ -9,6 +9,252 @@ import '../industrial trainign/industry.dart';
 import 'icon.dart';
 
 class Categary extends StatelessWidget {
+  Widget pageChildrenWeb(double width, context) {
+    return Container(
+      color: Colors.red,
+      width: width,
+      child: Padding(
+        padding: EdgeInsets.only(top: 16),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Job(context);
+                  },
+                  child: CatigoryW(
+                    image: 'assets/JOB.jpg',
+                    text: 'JOB',
+                    color: Color(0xFF000000),
+                  ),
+                ),
+
+                // MOVE TO SPLASHSCREEN
+                GestureDetector(
+                  onTap: () {
+                    dialogFun(context);
+                  },
+                  child: CatigoryW(
+                    image: 'assets/Internship.jpg',
+                    text: 'INTERNSHIP',
+                    color: Color(0xFF43DC64),
+                  ),
+                ), // MOVE TO GENERATOR
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    IndutrialTraining(context);
+                  },
+                  child: CatigoryW(
+                    image: 'assets/project.png',
+                    text: 'INDUSTRIAL PROJECT',
+                    color: Color(0xFF7DA4FF),
+                  ),
+                ), // MOVE TO SCANNER
+                GestureDetector(
+                  onTap: () {
+                    Bootcamp(context);
+                  },
+                  child: CatigoryW(
+                    image: 'assets/Bootcamp.jpg',
+                    text: 'BOOTCAMP',
+                    color: Color(0xFF43DC64),
+                  ),
+                ), //MOVE  ABOUT US PAGE
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    dialogFunn(context);
+                  },
+                  child: CatigoryW(
+                    image: 'assets/training.jpg',
+                    text: 'LIVE PROJECT',
+                    color: Color(0xFF7DA4FF),
+                  ),
+                ), // MOVE TO SCANNER
+                GestureDetector(
+                  // onTap: () {
+                  //   IndutrialTraining(context);
+                  // },
+                  child: CatigoryW(
+                    image: 'assets/about.jpg',
+                    text: 'HElP',
+                    color: Color(0xFF7DA4FF),
+                  ),
+                ), //MOVE  ABOUT US PAGE
+              ],
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   children: [
+            //     CatigoryW(
+            //       image: 'assets/QUES/Play.png',
+            //       text: 'Amplitude',
+            //       color: Color(0xFF7DA4FF),
+            //     ), // MOVE TO SCANNER
+            //     CatigoryW(
+            //       image: 'assets/Help.png',
+            //       text: 'Help',
+            //       color: Color(0xFF43DC64),
+            //     ), //MOVE  ABOUT US PAGE
+            //   ],
+            // ),
+            // SizedBox(
+            //   height: 10,
+            // ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  List<Widget> pageChildrenApp(double width, context) {
+    return <Widget>[
+      Container(
+        width: width,
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(top: 16),
+                        child: Column(
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                Job(context);
+                              },
+                              child: CatigoryW(
+                                image: 'assets/JOB.jpg',
+                                text: 'JOB',
+                                color: Color(0xFF000000),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            // MOVE TO SPLASHSCREEN
+                            GestureDetector(
+                              onTap: () {
+                                dialogFun(context);
+                              },
+                              child: CatigoryW(
+                                image: 'assets/Internship.jpg',
+                                text: 'INTERNSHIP',
+                                color: Color(0xFF43DC64),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                IndutrialTraining(context);
+                              },
+                              child: CatigoryW(
+                                image: 'assets/project.png',
+                                text: 'INDUSTRIAL PROJECT',
+                                color: Color(0xFF7DA4FF),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ), // MOVE TO SCANNER
+                            GestureDetector(
+                              onTap: () {
+                                Bootcamp(context);
+                              },
+                              child: CatigoryW(
+                                image: 'assets/Bootcamp.jpg',
+                                text: 'BOOTCAMP',
+                                color: Color(0xFF43DC64),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                dialogFunn(context);
+                              },
+                              child: CatigoryW(
+                                image: 'assets/training.jpg',
+                                text: 'LIVE PROJECT',
+                                color: Color(0xFF7DA4FF),
+                              ),
+                            ), // MOVE TO SCANNER
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            GestureDetector(
+                              // onTap: () {
+                              //   IndutrialTraining(context);
+                              // },
+                              child: CatigoryW(
+                                image: 'assets/about.jpg',
+                                text: 'HElP',
+                                color: Color(0xFF7DA4FF),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            // Row(
+                            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            //   children: [
+                            //     CatigoryW(
+                            //       image: 'assets/QUES/Play.png',
+                            //       text: 'Amplitude',
+                            //       color: Color(0xFF7DA4FF),
+                            //     ), // MOVE TO SCANNER
+                            //     CatigoryW(
+                            //       image: 'assets/Help.png',
+                            //       text: 'Help',
+                            //       color: Color(0xFF43DC64),
+                            //     ), //MOVE  ABOUT US PAGE
+                            //   ],
+                            // ),
+                            // SizedBox(
+                            //   height: 10,
+                            // ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      )
+    ];
+  }
+
   /// Start for Student dialog
   Map<String, Map<int, List<String>>> dict = {
     'internship': {
@@ -593,132 +839,150 @@ class Categary extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Stack(
+    return LayoutBuilder(builder: (context, constraints) {
+      if (constraints.maxWidth > 800) {
+        return Row(
           children: [
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(top: 16),
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            GestureDetector(
-                              onTap: () {
-                                Job(context);
-                              },
-                              child: CatigoryW(
-                                image: 'assets/JOB.jpg',
-                                text: 'JOB',
-                                color: Color(0xFF000000),
-                              ),
-                            ),
-
-                            // MOVE TO SPLASHSCREEN
-                            GestureDetector(
-                              onTap: () {
-                                dialogFun(context);
-                              },
-                              child: CatigoryW(
-                                image: 'assets/Internship.jpg',
-                                text: 'INTERNSHIP',
-                                color: Color(0xFF43DC64),
-                              ),
-                            ), // MOVE TO GENERATOR
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            GestureDetector(
-                              onTap: () {
-                                IndutrialTraining(context);
-                              },
-                              child: CatigoryW(
-                                image: 'assets/project.png',
-                                text: 'INDUSTRIAL PROJECT',
-                                color: Color(0xFF7DA4FF),
-                              ),
-                            ), // MOVE TO SCANNER
-                            GestureDetector(
-                              onTap: () {
-                                Bootcamp(context);
-                              },
-                              child: CatigoryW(
-                                image: 'assets/Bootcamp.jpg',
-                                text: 'BOOTCAMP',
-                                color: Color(0xFF43DC64),
-                              ),
-                            ), //MOVE  ABOUT US PAGE
-                          ],
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            GestureDetector(
-                              onTap: () {
-                                dialogFunn(context);
-                              },
-                              child: CatigoryW(
-                                image: 'assets/training.jpg',
-                                text: 'LIVE PROJECT',
-                                color: Color(0xFF7DA4FF),
-                              ),
-                            ), // MOVE TO SCANNER
-                            GestureDetector(
-                              // onTap: () {
-                              //   IndutrialTraining(context);
-                              // },
-                              child: CatigoryW(
-                                image: 'assets/about.jpg',
-                                text: 'HElP',
-                                color: Color(0xFF7DA4FF),
-                              ),
-                            ), //MOVE  ABOUT US PAGE
-                          ],
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        // Row(
-                        //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        //   children: [
-                        //     CatigoryW(
-                        //       image: 'assets/QUES/Play.png',
-                        //       text: 'Amplitude',
-                        //       color: Color(0xFF7DA4FF),
-                        //     ), // MOVE TO SCANNER
-                        //     CatigoryW(
-                        //       image: 'assets/Help.png',
-                        //       text: 'Help',
-                        //       color: Color(0xFF43DC64),
-                        //     ), //MOVE  ABOUT US PAGE
-                        //   ],
-                        // ),
-                        // SizedBox(
-                        //   height: 10,
-                        // ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            SizedBox(width: MediaQuery.of(context).size.width / 15),
+            //mainAxisAlignment: MainAxisAlignment.center,
+            pageChildrenWeb(
+                MediaQuery.of(context).size.width -
+                    (MediaQuery.of(context).size.width / 14) * 2,
+                context),
+            SizedBox(width: MediaQuery.of(context).size.width / 15),
           ],
-        ),
-      ],
-    );
+        );
+      } else
+        return Column(
+            children: pageChildrenApp(constraints.biggest.width, context));
+    });
+    //   child: Column(
+    //     children: [
+    //       Stack(
+    //         children: [
+    //           Padding(
+    //             padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+    //             child: Column(
+    //               crossAxisAlignment: CrossAxisAlignment.start,
+    //               children: [
+    //                 Padding(
+    //                   padding: EdgeInsets.only(top: 16),
+    //                   child: Column(
+    //                     children: [
+    //                       Row(
+    //                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //                         children: [
+    //                           GestureDetector(
+    //                             onTap: () {
+    //                               Job(context);
+    //                             },
+    //                             child: CatigoryW(
+    //                               image: 'assets/JOB.jpg',
+    //                               text: 'JOB',
+    //                               color: Color(0xFF000000),
+    //                             ),
+    //                           ),
+    //
+    //                           // MOVE TO SPLASHSCREEN
+    //                           GestureDetector(
+    //                             onTap: () {
+    //                               dialogFun(context);
+    //                             },
+    //                             child: CatigoryW(
+    //                               image: 'assets/Internship.jpg',
+    //                               text: 'INTERNSHIP',
+    //                               color: Color(0xFF43DC64),
+    //                             ),
+    //                           ), // MOVE TO GENERATOR
+    //                         ],
+    //                       ),
+    //                       const SizedBox(
+    //                         height: 10,
+    //                       ),
+    //                       Row(
+    //                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //                         children: [
+    //                           GestureDetector(
+    //                             onTap: () {
+    //                               IndutrialTraining(context);
+    //                             },
+    //                             child: CatigoryW(
+    //                               image: 'assets/project.png',
+    //                               text: 'INDUSTRIAL PROJECT',
+    //                               color: Color(0xFF7DA4FF),
+    //                             ),
+    //                           ), // MOVE TO SCANNER
+    //                           GestureDetector(
+    //                             onTap: () {
+    //                               Bootcamp(context);
+    //                             },
+    //                             child: CatigoryW(
+    //                               image: 'assets/Bootcamp.jpg',
+    //                               text: 'BOOTCAMP',
+    //                               color: Color(0xFF43DC64),
+    //                             ),
+    //                           ), //MOVE  ABOUT US PAGE
+    //                         ],
+    //                       ),
+    //                       SizedBox(
+    //                         height: 10,
+    //                       ),
+    //                       Row(
+    //                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //                         children: [
+    //                           GestureDetector(
+    //                             onTap: () {
+    //                               dialogFunn(context);
+    //                             },
+    //                             child: CatigoryW(
+    //                               image: 'assets/training.jpg',
+    //                               text: 'LIVE PROJECT',
+    //                               color: Color(0xFF7DA4FF),
+    //                             ),
+    //                           ), // MOVE TO SCANNER
+    //                           GestureDetector(
+    //                             // onTap: () {
+    //                             //   IndutrialTraining(context);
+    //                             // },
+    //                             child: CatigoryW(
+    //                               image: 'assets/about.jpg',
+    //                               text: 'HElP',
+    //                               color: Color(0xFF7DA4FF),
+    //                             ),
+    //                           ), //MOVE  ABOUT US PAGE
+    //                         ],
+    //                       ),
+    //                       SizedBox(
+    //                         height: 10,
+    //                       ),
+    //                       // Row(
+    //                       //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //                       //   children: [
+    //                       //     CatigoryW(
+    //                       //       image: 'assets/QUES/Play.png',
+    //                       //       text: 'Amplitude',
+    //                       //       color: Color(0xFF7DA4FF),
+    //                       //     ), // MOVE TO SCANNER
+    //                       //     CatigoryW(
+    //                       //       image: 'assets/Help.png',
+    //                       //       text: 'Help',
+    //                       //       color: Color(0xFF43DC64),
+    //                       //     ), //MOVE  ABOUT US PAGE
+    //                       //   ],
+    //                       // ),
+    //                       // SizedBox(
+    //                       //   height: 10,
+    //                       // ),
+    //                     ],
+    //                   ),
+    //                 ),
+    //               ],
+    //             ),
+    //           ),
+    //         ],
+    //       ),
+    //     ],
+    //   ),
+    // );
   }
 }
