@@ -11,7 +11,7 @@ class LandingPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(150.0, 10, 50, 0),
               child: Text(
-                'FRESHER SPACE',
+                'FRESHER ',
                 style: TextStyle(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
