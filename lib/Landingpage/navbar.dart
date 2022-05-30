@@ -31,7 +31,7 @@ class DesktopNavbar extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(35, 40, 10, 10),
             child: Text(
-              'FRESHER SPACE',
+              'FRESHER ',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
